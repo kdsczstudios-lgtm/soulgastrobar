@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soul Gastrobar Taubaté</title>
+  <meta name="description" content="Bar de música em Taubaté com palco para banda, drinks autorais e cozinha de bar. Av. Independência, 427. Reservas pelo WhatsApp.">
+  <link rel="icon" href="img/logo-soul.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&amp;family=Instrument+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <a class="marca" href="#inicio" aria-label="Soul Gastrobar, início">
+      <img src="img/logo-soul.svg" alt="" width="44" height="44">
+    </a>
+    <button class="menu-botao" type="button" id="menu-botao" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav aria-label="Principal" id="menu">
+      <ul>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#drinks">Drinks</a></li>
+        <li><a href="#cozinha">Cozinha</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#chegar">Como chegar</a></li>
+        <li><a class="nav-reservar" href="#reservar">Reservar mesa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <section id="inicio" class="palco" aria-labelledby="titulo-principal">
+      <div class="palco-midia" id="palco-midia" aria-hidden="true"></div>
+      <div class="palco-luz" aria-hidden="true"></div>
+      <div class="palco-cena">
+        <div class="palco-marca"><svg class="lettering-soul" viewBox="-7.5 -7.5 588.0 115.0" role="img" aria-label="Soul" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><path transform="translate(0 0)" d="M133 0H25A25 25 0 0 0 25 50H108A25 25 0 0 1 108 100H0"/><path transform="translate(167 0)" d="M25 0H95A25 25 0 0 1 120 25V75A25 25 0 0 1 95 100H25A25 25 0 0 1 0 75V25A25 25 0 0 1 25 0Z"/><path transform="translate(321 0)" d="M0 0V75A25 25 0 0 0 25 100H93A25 25 0 0 0 118 75V0"/><path transform="translate(473 0)" d="M0 0V75A25 25 0 0 0 25 100H100"/></g></svg><svg class="lettering-gastrobar" viewBox="-7.5 -7.5 1336.0 115.0" role="img" aria-label="Gastrobar" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><path transform="translate(0 0)" d="M120 0H25A25 25 0 0 0 0 25V75A25 25 0 0 0 25 100H95A25 25 0 0 0 120 75V52H66"/><path transform="translate(154 0)" d="M0 100V25A25 25 0 0 1 25 0H93A25 25 0 0 1 118 25V100M0 56H118"/><path transform="translate(306 0)" d="M133 0H25A25 25 0 0 0 25 50H108A25 25 0 0 1 108 100H0"/><path transform="translate(473 0)" d="M0 0H104M52.0 0V100"/><path transform="translate(611 0)" d="M0 100V0H87A25 25 0 0 1 87 50H0M87 50A25 25 0 0 1 112 75V100"/><path transform="translate(757 0)" d="M25 0H95A25 25 0 0 1 120 25V75A25 25 0 0 1 95 100H25A25 25 0 0 1 0 75V25A25 25 0 0 1 25 0Z"/><path transform="translate(911 0)" d="M0 0H87A25 25 0 0 1 87 50H0M87 50A25 25 0 0 1 87 100H0V0"/><path transform="translate(1057 0)" d="M0 100V25A25 25 0 0 1 25 0H93A25 25 0 0 1 118 25V100M0 56H118"/><path transform="translate(1209 0)" d="M0 100V0H87A25 25 0 0 1 87 50H0M87 50A25 25 0 0 1 112 75V100"/></g></svg></div>
+        <p class="palco-quando" id="palco-quando">Ao vivo no palco do Soul</p>
+        <p class="palco-banda" id="palco-banda">Banda ao vivo</p>
+        <p class="palco-estilo" id="palco-estilo">Toda semana tem show.</p>
+        <h1 id="titulo-principal">Bar de música com palco para banda, drinks autorais e cozinha de bar em Taubaté</h1>
+        <p class="palco-botoes">
+          <a class="botao" id="palco-reservar" href="#reservar">Reservar mesa para este show</a>
+          <a class="botao botao-contorno" href="#agenda">Ver a agenda</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="agenda" class="secao" aria-labelledby="titulo-agenda">
+      <div class="secao-topo">
+        <h2 id="titulo-agenda">Agenda de shows</h2>
+        <p>Tem banda no palco toda semana. Reserve a mesa para o dia do show que você quer ver.</p>
+      </div>
+      <ol class="agenda" id="lista-agenda"></ol>
+      <noscript><p>Ative o JavaScript para ver a agenda, ou consulte <a href="https://www.instagram.com/soul.gastrobar/">@soul.gastrobar</a>.</p></noscript>
+      <p class="nota">Shows especiais com ingresso são vendidos pelo Sympla e anunciados no <a href="https://www.instagram.com/soul.gastrobar/" target="_blank" rel="noopener noreferrer">Instagram do Soul</a>.</p>
+    </section>
+
+    <section id="drinks" class="secao secao-drinks" aria-labelledby="titulo-drinks">
+      <div class="secao-topo">
+        <h2 id="titulo-drinks">Drinks</h2>
+        <p>Clássicos bem feitos e receitas da casa. Se não souber o que pedir, peça o Drink Coringa e deixe o barman escolher.</p>
+      </div>
+
+      <article id="drink-campeao" class="campeao" aria-labelledby="titulo-campeao">
+        <p class="campeao-premio">1º lugar no Festival Gastronômico Mazzaropi 2026</p>
+        <h3 id="titulo-campeao">Meu Porto, Minha Saudade</h3>
+        <p>Licor de cassis, grenadine, espumante e cachaça. Criado para o festival, inspirado no filme Portugal, Minha Saudade, de Mazzaropi.</p>
+        <p class="campeao-preco">R$ 38</p>
+      </article>
+
+      <div class="cartas">
+        <div class="carta">
+          <h3>Da casa</h3>
+          <ul class="menu-lista">
+            <li><p class="item"><span class="nome">Gin Soul</span><span class="preco">R$ 45</span></p><p class="desc">Gin, frutas vermelhas e água tônica.</p></li>
+            <li><p class="item"><span class="nome">Jorge Amado</span><span class="preco">R$ 42</span></p><p class="desc">Cachaça Gabriela, manjericão e maracujá.</p></li>
+            <li><p class="item"><span class="nome">Fitzgerald by Nunu</span><span class="preco">R$ 39</span></p><p class="desc">Gin, limão-siciliano, açúcar e bitter.</p></li>
+            <li><p class="item"><span class="nome">Doce Desejo</span><span class="preco">R$ 35</span></p><p class="desc">Maracujá, morango e cachaça de doce de leite.</p></li>
+            <li><p class="item"><span class="nome">Drink Coringa</span><span class="preco">R$ 42</span></p><p class="desc">Receita do barman ou um drink que não está no menu.</p></li>
+          </ul>
+        </div>
+        <div class="carta">
+          <h3>Spritz</h3>
+          <ul class="menu-lista">
+            <li><p class="item"><span class="nome">Aperol Spritz</span><span class="preco">R$ 42</span></p><p class="desc">Aperol, espumante, laranja e água com gás.</p></li>
+            <li><p class="item"><span class="nome">Campari Spritz</span><span class="preco">R$ 42</span></p><p class="desc">Campari, espumante, laranja e água com gás.</p></li>
+            <li><p class="item"><span class="nome">Limoncello Spritz</span><span class="preco">R$ 42</span></p><p class="desc">Limoncello, espumante, limão e água com gás.</p></li>
+          </ul>
+          <h3>Caipirinhas</h3>
+          <p class="desc">Limão, laranja, maracujá, abacaxi, morango ou frutas vermelhas.</p>
+          <ul class="menu-lista">
+            <li><p class="item"><span class="nome">Caipirinha de cachaça</span><span class="preco">R$ 34</span></p></li>
+            <li><p class="item"><span class="nome">Caipiroska de vodka</span><span class="preco">R$ 36</span></p></li>
+            <li><p class="item"><span class="nome">Saquerinha</span><span class="preco">R$ 32</span></p></li>
+          </ul>
+        </div>
+        <div class="carta">
+          <h3>Clássicos</h3>
+          <ul class="menu-lista">
+            <li><p class="item"><span class="nome">Negroni</span><span class="preco">R$ 42</span></p><p class="desc">Campari, gin, vermute tinto e laranja.</p></li>
+            <li><p class="item"><span class="nome">Moscow Mule</span><span class="preco">R$ 42</span></p><p class="desc">Vodka, limão, xarope e espuma de gengibre.</p></li>
+            <li><p class="item"><span class="nome">Margarita</span><span class="preco">R$ 46</span></p><p class="desc">Tequila, limão, licor de laranja e borda de sal.</p></li>
+            <li><p class="item"><span class="nome">Mojito</span><span class="preco">R$ 42</span></p><p class="desc">Rum, limão, hortelã, açúcar e água com gás.</p></li>
+            <li><p class="item"><span class="nome">Dry Martini 007</span><span class="preco">R$ 42</span></p><p class="desc">Gin, vermute dry e azeitonas.</p></li>
+            <li><p class="item"><span class="nome">Gin tônica</span><span class="preco">R$ 42</span></p><p class="desc">Gin, limão, gelo e água tônica.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="nota">Também tem chopp Heineken e Brahma, cervejas especiais (Campos do Jordão, Roleta Russa, Trooper) e carta de vinhos da Argentina, Chile, Portugal, Itália, Espanha e Brasil. <a href="https://drive.google.com/file/d/1lx9g_3FPudKm_tkXEfUDPH6hRUmHb1Q0/view" target="_blank" rel="noopener noreferrer">Ver o cardápio completo em PDF</a></p>
+    </section>
+
+    <section id="cozinha" class="secao" aria-labelledby="titulo-cozinha">
+      <div class="secao-topo">
+        <h2 id="titulo-cozinha">Cozinha</h2>
+        <p>Petiscos para dividir na mesa durante o show, pratos e almoço de terça a domingo.</p>
+      </div>
+      <div class="cozinha">
+        <figure class="cozinha-foto">
+          <img src="img/galeria/entrada-aperol.jpg" alt="Entrada da casa com tomate, palmito e azeitonas, ao lado de um Aperol Spritz" width="1159" height="1415" loading="lazy">
+          <figcaption>Entrada da casa com Aperol Spritz</figcaption>
+        </figure>
+        <ul class="pratos">
+          <li><p class="item"><span class="nome">Torresmo de rolo</span><span class="preco">R$ 68</span></p><p class="desc">Pururucado, com vinagrete de maçã verde e pimenta da casa. 300 g.</p></li>
+          <li><p class="item"><span class="nome">Bolovo de carne de panela</span><span class="preco">R$ 32</span></p><p class="desc">Ovo de gema cremosa envolto em carne de panela, com maionese de picles e ervas.</p></li>
+          <li><p class="item"><span class="nome">Steak tartare</span><span class="preco">R$ 112</span></p><p class="desc">Filé mignon picado na faca, com dijon, picles e alcaparras. 150 g.</p></li>
+          <li><p class="item"><span class="nome">Croqueta de costela</span><span class="preco">R$ 52</span></p><p class="desc">Com gorgonzola e mostarda ancienne. Seis unidades.</p></li>
+          <li><p class="item"><span class="nome">Pastel da casa</span><span class="preco">a partir de R$ 53</span></p><p class="desc">Queijo da Alagoa com gorgonzola, ragu de carne ou camarão.</p></li>
+          <li><p class="item"><span class="nome">Filé mignon e gorgonzola</span><span class="preco">R$ 128</span></p><p class="desc">Tiras grelhadas com molho cremoso de gorgonzola. 350 g.</p></li>
+        </ul>
+      </div>
+      <p class="nota"><a href="https://drive.google.com/file/d/1lx9g_3FPudKm_tkXEfUDPH6hRUmHb1Q0/view" target="_blank" rel="noopener noreferrer">Ver o cardápio completo em PDF</a></p>
+    </section>
+
+    <section id="galeria" class="secao" aria-labelledby="titulo-galeria">
+      <div class="secao-topo">
+        <h2 id="titulo-galeria">Uma noite no Soul</h2>
+        <p>O palco, o balcão e as mesas cheias numa noite de show.</p>
+      </div>
+      <ul class="galeria" id="lista-galeria">
+        <li class="foto foto-grande vazia"><p>Banda no palco, vista do salão</p></li>
+        <li class="foto vazia"><p>Drink sendo servido no balcão</p></li>
+        <li class="foto vazia"><p>Steak tartare com Aperol Spritz</p></li>
+        <li class="foto vazia"><p>Torresmo de rolo com gin tônica</p></li>
+        <li class="foto vazia"><p>Bolovo com chopp</p></li>
+      </ul>
+      <p class="nota" id="galeria-nota">O quadro grande recebe a foto da banda no palco.</p>
+    </section>
+
+    <section id="avaliacoes" class="secao secao-avaliacoes" aria-labelledby="titulo-avaliacoes">
+      <h2 id="titulo-avaliacoes">Quem vem, volta</h2>
+      <ul class="notas">
+        <li><p class="nota-valor">4,8</p><p>de 5 no Restaurant Guru, com 128 avaliações</p></li>
+        <li><p class="nota-valor">4,7</p><p>de 5 no Prime Gourmet, com 45 avaliações</p></li>
+      </ul>
+      <p class="avaliacoes-texto">Os elogios mais repetidos: a variedade de drinks, o chopp gelado, a música de bom gosto e o atendimento.</p>
+      <a class="botao botao-contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Soul+Gastrobar+Taubat%C3%A9" target="_blank" rel="noopener noreferrer">Avaliar o Soul no Google</a>
+    </section>
+
+    <section id="eventos" class="secao secao-eventos" aria-labelledby="titulo-eventos">
+      <div class="secao-topo">
+        <h2 id="titulo-eventos">Aniversários e eventos</h2>
+        <p>Comemore com banda ao vivo: aniversários, confraternizações de empresa e festas fechadas. Diga a data e quantas pessoas, e a casa monta a proposta.</p>
+      </div>
+      <a class="botao" href="#reservar" data-evento="Orçamento de evento ou aniversário">Pedir orçamento de evento</a>
+    </section>
+
+    <section id="sobre" class="secao" aria-labelledby="titulo-sobre">
+      <div class="sobre">
+        <div>
+          <h2 id="titulo-sobre">O Som da Alma</h2>
+          <p>Em português, soul significa alma. Para nós, Soul significa o Som da Alma. Somos apaixonados por música, e foi ela que nos uniu para criar um lugar que junta pessoas que vibram na mesma frequência.</p>
+          <blockquote>
+            <p>A vida é a arte do encontro.</p>
+            <footer>Vinicius de Moraes</footer>
+          </blockquote>
+        </div>
+        <div>
+          <h3>Para vir com quem você quiser</h3>
+          <ul class="facilidades">
+            <li>Mesas ao ar livre</li>
+            <li>Espaço kids</li>
+            <li>Pet friendly</li>
+            <li>Estacionamento grátis</li>
+            <li>Opções vegetarianas</li>
+            <li>Acessibilidade e wi-fi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservar" class="secao secao-reservar" aria-labelledby="titulo-reservar">
+      <div class="secao-topo">
+        <h2 id="titulo-reservar">Reservar mesa</h2>
+        <p>Escolha o dia, o horário e quantas pessoas. A reserva é confirmada pelo WhatsApp da casa.</p>
+      </div>
+      <a class="botao" href="#reservar" data-abre-reserva>Reservar mesa</a>
+      <p class="nota">Prefere chamar direto? WhatsApp <a href="https://wa.me/5512991885259" target="_blank" rel="noopener noreferrer">(12) 99188-5259</a>.</p>
+    </section>
+
+    <section id="chegar" class="secao" aria-labelledby="titulo-chegar">
+      <div class="chegar">
+        <div>
+          <h2 id="titulo-chegar">Horários e como chegar</h2>
+          <address>Av. Independência, 427<br>Vila Jaboticabeira, Taubaté/SP<br>CEP 12031-001</address>
+          <p><a class="botao botao-contorno" href="https://www.google.com/maps/search/?api=1&amp;query=Soul+Gastrobar+Av.+Independ%C3%AAncia+427+Taubat%C3%A9" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a></p>
+        </div>
+        <table class="horarios">
+          <caption>Horário de funcionamento</caption>
+          <tbody>
+            <tr><th scope="row">Segunda</th><td>Fechado</td></tr>
+            <tr><th scope="row">Terça</th><td>11h30 às 15h</td></tr>
+            <tr><th scope="row">Quarta a sexta</th><td>11h30 às 15h e 18h às 0h30</td></tr>
+            <tr><th scope="row">Sábado</th><td>11h30 às 0h30</td></tr>
+            <tr><th scope="row">Domingo</th><td>11h30 às 18h</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <img src="img/logo-soul.svg" alt="Logo do Soul Gastrobar" width="56" height="56">
+    <p>Soul Gastrobar, Av. Independência, 427, Taubaté/SP</p>
+    <ul>
+      <li><a href="https://www.instagram.com/soul.gastrobar/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://www.facebook.com/soulgastrobar/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Soul+Gastrobar+Taubat%C3%A9" target="_blank" rel="noopener noreferrer">Avaliar no Google</a></li>
+      <li><a href="privacidade.html">Política de privacidade</a></li>
+    </ul>
+  </footer>
+
+  <dialog class="modal" id="modal-reserva" aria-labelledby="titulo-modal">
+    <div class="modal-caixa">
+      <div class="modal-topo">
+        <h2 id="titulo-modal">Reservar mesa</h2>
+        <button class="modal-fechar" type="button" id="modal-fechar" aria-label="Fechar">Fechar</button>
+      </div>
+      <p class="modal-texto">Preencha e envie pelo WhatsApp da casa. Nenhum dado fica salvo neste site.</p>
+      <form id="form-reserva" class="reserva" novalidate>
+        <div class="campo campo-largo">
+          <label for="r-nome">Seu nome</label>
+          <input id="r-nome" name="nome" type="text" autocomplete="name" required maxlength="60">
+        </div>
+        <div class="campo">
+          <label for="r-data">Data</label>
+          <input id="r-data" name="data" type="date" required>
+        </div>
+        <div class="campo">
+          <label for="r-hora">Horário</label>
+          <input id="r-hora" name="hora" type="time" required>
+        </div>
+        <div class="campo">
+          <label for="r-pessoas">Pessoas</label>
+          <input id="r-pessoas" name="pessoas" type="number" inputmode="numeric" min="1" max="60" required>
+        </div>
+        <div class="campo campo-largo">
+          <label for="r-motivo">Show ou ocasião (opcional)</label>
+          <input id="r-motivo" name="motivo" type="text" maxlength="80" placeholder="Ex.: aniversário, show de sexta">
+        </div>
+        <p class="erro campo-largo" id="r-erro" role="alert" hidden></p>
+        <button class="botao campo-largo" type="submit">Montar minha reserva</button>
+      </form>
+
+      <div class="reserva-pronta" id="r-pronto" hidden>
+        <p id="r-resumo"></p>
+        <a class="botao" id="r-link" href="https://wa.me/5512991885259" target="_blank" rel="noopener noreferrer">Enviar reserva no WhatsApp</a>
+      </div>
+
+    </div>
+  </dialog>
+
+  <a class="reservar-fixo" href="#reservar">Reservar mesa</a>
+
+  <script src="js/agenda.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
